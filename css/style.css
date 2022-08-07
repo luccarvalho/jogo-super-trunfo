@@ -2,7 +2,7 @@ body {
   font-family: "Roboto Mono", monospace;
   min-height: 854px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/codigo-matrix.jpg");
+    url("../img/background.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center top;

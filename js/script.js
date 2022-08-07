@@ -126,3 +126,9 @@ function exibirCartaMaquina() {
   var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
   divCartaMaquina.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
 }
+
+const btn = document.querySelector("#close-modal");
+
+btn.addEventListener("click", () => {
+  location.reload()
+})
