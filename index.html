@@ -8,15 +8,23 @@
 
   <body>
     <div class="container">
-      <img
-        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
-        class="page-logo"
-        alt=""
-      />
       <h1 class="page-title">Super Trunfo</h1>
+      <img src="img/star-wars-logo.png" class="logo" alt="Logo Star Wars" />
+      <p class="description">1° Clique em sorteie uma carta</p>
       <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+      <p class="description">2° Escolha um atributo na carta</p>
+      <p class="description">3° Clique em jogar</p>
+      <button
+        class="button-jogar"
+        type="button"
+        id="btnJogar"
+        onclick="jogar()"
+        disabled="false"
+      >
+        Jogar
+      </button>
+
       <form id="form">
-        <h2>Escolha o seu atributo</h2>
         <div class="wrapper">
           <div>
             <div id="carta-jogador">
@@ -36,22 +44,16 @@
             </div>
           </div>
         </div>
-        <button
-          class="button-jogar"
-          type="button"
-          id="btnJogar"
-          onclick="jogar()"
-          disabled="false"
-        >
-          Jogar
-        </button>
       </form>
     </div>
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
-      <!-- <button id="close-modal">Fechar</button> -->
+      <div class="modal-footer">
+        <button onclick="window.location.reload()" id="close-modal">
+          Fechar
+        </button>
+      </div>
     </div>
-    <button id="close-modal">Fechar</button>
 
     <script src="js/script.js"></script>
   </body>
