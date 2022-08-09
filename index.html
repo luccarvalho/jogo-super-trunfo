@@ -7,45 +7,39 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="page-title">Super Trunfo</h1>
-      <img src="img/star-wars-logo.png" class="logo" alt="Logo Star Wars" />
-      <p class="description">1° Clique em sorteie uma carta</p>
-      <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
-      <p class="description">2° Escolha um atributo na carta</p>
-      <p class="description">3° Clique em jogar</p>
-      <button
-        class="button-jogar"
-        type="button"
-        id="btnJogar"
-        onclick="jogar()"
-        disabled="false"
-      >
-        Jogar
-      </button>
-
+    <section class="container">
+      <div id="carta-jogador"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+        style="width: inherit; height: inherit; position: absolute"/>
+      </div>
+      
+      <div id="titulo">
+        <h1 class="page-title">Super Trunfo</h1>
+        <img src="img/star-wars-logo.png" class="logo" alt="Logo Star Wars" />
+        <p class="description">1° Clique em sorteie uma carta</p>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <p class="description">2° Escolha um atributo na carta</p>
+        <p class="description">3° Clique em jogar</p>
+        <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+      </div>
+      
+      <div id="carta-maquina" class="carta"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+        style="width: inherit; height: inherit; position: absolute"/>
+      </div>
+    </section>
+    
+    <!-- <div>
       <form id="form">
         <div class="wrapper">
           <div>
-            <div id="carta-jogador">
-              <img
-                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
-                style="width: inherit; height: inherit; position: absolute"
-              />
-              <h3></h3>
-            </div>
+            
           </div>
           <div>
-            <div id="carta-maquina" class="carta">
-              <img
-                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
-                style="width: inherit; height: inherit; position: absolute"
-              />
-            </div>
+            
           </div>
         </div>
       </form>
-    </div>
+    </div> -->
+    
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
       <div class="modal-footer">
@@ -53,7 +47,7 @@
           Fechar
         </button>
       </div>
-    </div>
+    
 
     <script src="js/script.js"></script>
   </body>

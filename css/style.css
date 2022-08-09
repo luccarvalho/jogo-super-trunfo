@@ -7,27 +7,30 @@ body {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  /* padding-bottom: 20vh; */
+  height: 100vh;
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   padding: 20px;
 }
 
 .page-title {
-  font-size: 2rem;
+  font-size: 5rem;
   color: #eec475;
   padding-bottom: 1rem;
   margin: 5px 0;
 }
 
 .logo {
-  width: 200px;
+  width: 25rem;
 }
 
 .description {
   color: white;
+  font-size: 1.2rem;
 }
 
 button,
@@ -47,6 +50,7 @@ button,
   border-radius: 10px;
   margin-bottom: 20px;
   margin: 0 auto;
+  /* padding-top: 5rem; */
   display: flex;
   align-items: flex-end;
   position: relative;
